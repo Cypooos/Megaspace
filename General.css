@@ -1,0 +1,233 @@
+body {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1em;
+	height:100%;
+	width: 100%;
+	margin:0;
+	padding:0;
+	color:rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+	overflow-anchor: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+  -- General Class
+*/
+
+#background {
+  position: fixed;
+	z-index: -100;
+	left:0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+	opacity: 0.5;
+}
+.content
+{
+	background-color: rgba(51, 51, 51, 0.5);
+	border-radius: 10px;
+	margin: 5%; 
+	padding: 20px;
+}
+
+.box {
+	margin-bottom:1em;
+	padding: 5px;
+	background-color: rgb(0, 39, 2);
+}
+
+.box b {
+	color: rgb(255, 68, 68);
+}
+
+img.pxl
+{
+	image-rendering: pixelated;
+}
+
+article a:not(.ignore)
+{
+	transition-duration: 1s;
+	background: linear-gradient(#461400, #70004b);
+	border-radius: 3px;
+	padding-left:4px;
+	padding-right:4px;
+	color:#e66465;
+}
+
+article a:not(.ignore):hover
+{
+	background: linear-gradient(#ff6e34, #ff39bd);
+	color:#360505;
+}
+
+/*
+  -- 4 Elements config  ---
+*/
+
+table.c-4
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table.c-4 td:hover img:not(.color-hover) {filter: blur(2px) grayscale(50%);}
+
+table.c-4 td:hover img.color-hover {filter: blur(2px) hue-rotate(90deg) grayscale(50%)}
+
+table.c-4 img
+{
+  height: 300px;
+  width: 300px;
+	transition-duration: 0.2s;
+	border-radius: 10px;
+}
+
+
+
+/*
+  -- Figure image  ---
+*/
+figure:hover figcaption {opacity: 1;}
+
+figure figcaption
+{
+	transition:all 0.5s;
+  width: 100%;
+  height: auto;
+  position: absolute;
+	opacity: 0;
+  z-index: 10;
+	background-color: rgba(255, 255, 107, 1);
+	border-radius: 10px;
+	text-align: center;
+	font-size:2em;
+}
+
+figure {
+  position: relative;
+}
+
+/*
+ --- Figure Text LI
+*/
+
+/*
+  --- Navigation ---
+*/
+
+nav {
+	position: -webkit-sticky sticky;
+	top:0px;
+  z-index: 1;
+	width:100%;
+	text-align:center;
+}
+nav h1 {
+	text-align: center;
+	margin: 10px;
+	padding:5px;
+}
+nav ul {
+	display:inline-block;
+  list-style-type: none;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left:40px;
+	padding-right:40px;
+	width:calc(100% - 80px);
+	background: rgb(26, 30, 59);
+}
+nav li {
+	display:block;
+	float:left;
+	font-size:1.5em;
+	margin:15px;
+}
+nav li.right {
+	float:right;
+}
+nav li a{
+	color: rgb(255, 255, 0) ;
+	padding:10px;
+	transition: 0.3s;
+	padding-left:4px;
+	padding-right:4px;
+	border: 2px;
+}
+nav li a:hover {
+	background-color:rgb(238, 255, 0);
+	color:rgb(0,0,0);
+}
+
+nav h1 {
+	font-weight: bold;
+	color: rgb(0, 238, 255);
+	font-size: 3em;
+}
+nav h2 {
+	font-weight: bold;
+	color: rgb(0, 255, 13);
+	font-size: 2em;
+}
+
+/*
+	---- FORM ----
+*/
+form {
+	color: rgb(0, 0, 0);
+  width:400px;
+  margin:0 auto;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+form h1{
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+	text-align: center;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+  background-color: #53af57;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+	transition: 0.5s;
+  border: 1px solid;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+form .info {
+	padding-bottom: 10px;
+}
+
+form a {
+  text-decoration: none;
+	color:blue;
+	padding-bottom: 10px;
+}
